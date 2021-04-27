@@ -1,4 +1,4 @@
-package example.DDD.dominio.recursos.valuesObject;
+package example.DDD.dominio.centrodeprestamos.valuesObject;
 
 public enum TiempoDePrestamo {
     HORAS4,

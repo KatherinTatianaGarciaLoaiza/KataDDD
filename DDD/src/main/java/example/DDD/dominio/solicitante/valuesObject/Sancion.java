@@ -16,7 +16,7 @@ public class Sancion implements ValueObject<Sancion.Value> {
         Comprobaciones.ComprobacionString(tiempoPenalizacion);
         this.motivo = Objects.requireNonNull(motivo);
         this.TiempoPenalizacion = Objects.requireNonNull(tiempoPenalizacion);
-        this.estadoSancion = EstadoSancion.INACTIVA;
+        this.estadoSancion = estadoSancion;
     }
 
     @Override

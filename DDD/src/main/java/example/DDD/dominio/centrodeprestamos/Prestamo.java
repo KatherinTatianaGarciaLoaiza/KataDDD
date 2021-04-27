@@ -6,7 +6,7 @@ import example.DDD.dominio.centrodeprestamos.valuesObject.EstadoDelRecurso;
 import example.DDD.dominio.centrodeprestamos.valuesObject.SalirDeLaInstitucion;
 import example.DDD.dominio.centrodeprestamos.valuesObject.TipoDeRecurso;
 import example.DDD.dominio.centrodeprestamos.valuesObject.PrestamoId;
-import example.DDD.dominio.recursos.valuesObject.TiempoDePrestamo;
+import example.DDD.dominio.centrodeprestamos.valuesObject.TiempoDePrestamo;
 
 public class Prestamo extends Entity<PrestamoId> {
 

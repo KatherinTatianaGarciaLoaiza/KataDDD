@@ -7,7 +7,7 @@ public class RecursoCreado extends co.com.sofka.domain.generic.DomainEvent {
     private final String idCentroDePrestamos;
 
     public RecursoCreado(List<String> recursosDisponibles, String idCentroDePrestamos) {
-        super("CentroDePrestamos.agregados.rescursos.recursocreado");
+        super("centrodeprestamos.agregados.rescursos.recursocreado");
         this.recursosDisponibles = recursosDisponibles;
         this.idCentroDePrestamos = idCentroDePrestamos;
     }

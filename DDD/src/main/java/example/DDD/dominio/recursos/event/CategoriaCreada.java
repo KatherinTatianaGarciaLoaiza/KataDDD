@@ -2,7 +2,7 @@ package example.DDD.dominio.recursos.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
 import example.DDD.dominio.recursos.valuesObject.CategoriaId;
-import example.DDD.dominio.recursos.valuesObject.TiempoDePrestamo;
+import example.DDD.dominio.centrodeprestamos.valuesObject.TiempoDePrestamo;
 import example.DDD.dominio.centrodeprestamos.valuesObject.SalirDeLaInstitucion;
 import example.DDD.dominio.centrodeprestamos.valuesObject.TipoDeRecurso;
 import example.DDD.dominio.recursos.valuesObject.CodigoDeBarras;

@@ -9,7 +9,7 @@ import example.DDD.dominio.centrodeprestamos.event.CentroDePrestamosCreado;
 import example.DDD.dominio.centrodeprestamos.event.PrestamoCreado;
 import example.DDD.dominio.centrodeprestamos.valuesObject.*;
 import example.DDD.dominio.VOgeneralesYComprobaciones.DatosPersonales;
-import example.DDD.dominio.recursos.valuesObject.TiempoDePrestamo;
+import example.DDD.dominio.centrodeprestamos.valuesObject.TiempoDePrestamo;
 
 import java.util.List;
 import java.util.Map;

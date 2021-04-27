@@ -3,7 +3,7 @@ package example.DDD.dominio.centrodeprestamos.event;
 import co.com.sofka.domain.generic.DomainEvent;
 import example.DDD.dominio.VOgeneralesYComprobaciones.Fecha;
 import example.DDD.dominio.centrodeprestamos.valuesObject.*;
-import example.DDD.dominio.recursos.valuesObject.TiempoDePrestamo;
+import example.DDD.dominio.centrodeprestamos.valuesObject.TiempoDePrestamo;
 
 public class PrestamoCreado extends DomainEvent {
     private final PrestamoId prestamoId;

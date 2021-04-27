@@ -20,7 +20,7 @@ public class Solicitante extends AggregateEvent<SolicitanteId> {
     protected Sancion sancion;
     protected TipoDeSolicitud tipoDeSolicitud;
 
-    public Solicitante(SolicitanteId entityId, ValueObject datosPersonales,ValueObject sancion, TipoDeSolicitud tipoDeSolicitud) {
+    public Solicitante(SolicitanteId entityId, DatosPersonales datosPersonales, Sancion sancion, TipoDeSolicitud tipoDeSolicitud) {
         super(entityId);
         appendChange(new SolicitanteCreado(datosPersonales, sancion, tipoDeSolicitud)).apply();
     }
@@ -44,5 +44,17 @@ public class Solicitante extends AggregateEvent<SolicitanteId> {
     public void asignarSancion(String motivo, String tiempoPenalizacion, EstadoSancion estadoSancion){
         Sancion sancion = new Sancion(motivo, tiempoPenalizacion, estadoSancion);
         appendChange(new SancionAsignada(this.entityId, sancion)).apply();
+    }
+
+    public DatosPersonales getDatosPersonales() {
+        return datosPersonales;
+    }
+
+    public Sancion getSancion() {
+        return sancion;
+    }
+
+    public TipoDeSolicitud getTipoDeSolicitud() {
+        return tipoDeSolicitud;
     }
 }

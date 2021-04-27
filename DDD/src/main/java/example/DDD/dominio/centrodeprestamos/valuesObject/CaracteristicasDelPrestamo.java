@@ -6,12 +6,10 @@ import example.DDD.dominio.VOgeneralesYComprobaciones.Comprobaciones;
 import java.util.Objects;
 
 public class CaracteristicasDelPrestamo  implements ValueObject<CaracteristicasDelPrestamo.Value> {
-    private final String puedeSalirDeLaInstitucion;
-    private final String tiempoDePrestamo;
+    private final SalirDeLaInstitucion puedeSalirDeLaInstitucion;
+    private final TiempoDePrestamo tiempoDePrestamo;
 
-    public CaracteristicasDelPrestamo(String puedeSalirDeLaInstitucion, String tiempoDePrestamo) {
-        Comprobaciones.ComprobacionString(puedeSalirDeLaInstitucion);
-        Comprobaciones.ComprobacionString(tiempoDePrestamo);
+    public CaracteristicasDelPrestamo(SalirDeLaInstitucion puedeSalirDeLaInstitucion, TiempoDePrestamo tiempoDePrestamo) {
         this.puedeSalirDeLaInstitucion = Objects.requireNonNull(puedeSalirDeLaInstitucion);
         this.tiempoDePrestamo = Objects.requireNonNull(tiempoDePrestamo);
     }
@@ -20,21 +18,21 @@ public class CaracteristicasDelPrestamo  implements ValueObject<CaracteristicasD
     public CaracteristicasDelPrestamo.Value value() {
         return new CaracteristicasDelPrestamo.Value() {
             @Override
-            public String puedeSalirDeLaInstitucion() {
+            public SalirDeLaInstitucion puedeSalirDeLaInstitucion() {
                 return puedeSalirDeLaInstitucion;
             }
 
             @Override
-            public String tiempoDePrestamo() {
+            public TiempoDePrestamo tiempoDePrestamo() {
                 return tiempoDePrestamo;
             }
         };
     }
 
     public interface Value {
-        String puedeSalirDeLaInstitucion();
+        SalirDeLaInstitucion puedeSalirDeLaInstitucion();
 
-        String tiempoDePrestamo();
+        TiempoDePrestamo tiempoDePrestamo();
 
     }
 }

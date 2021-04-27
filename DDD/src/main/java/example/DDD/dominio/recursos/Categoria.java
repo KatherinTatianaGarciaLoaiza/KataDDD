@@ -1,11 +1,9 @@
 package example.DDD.dominio.recursos;
 
 import co.com.sofka.domain.generic.Entity;
-import example.DDD.dominio.centrodeprestamos.valuesObject.SalirDeLaInstitucion;
 import example.DDD.dominio.centrodeprestamos.valuesObject.TipoDeRecurso;
 import example.DDD.dominio.recursos.valuesObject.CodigoDeBarras;
 import example.DDD.dominio.recursos.valuesObject.Disponibilidad;
-import example.DDD.dominio.recursos.valuesObject.TiempoDePrestamo;
 import example.DDD.dominio.recursos.valuesObject.CategoriaId;
 
 public class Categoria extends Entity<CategoriaId> {
