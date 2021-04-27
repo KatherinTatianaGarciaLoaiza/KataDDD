@@ -20,7 +20,7 @@ public class CentroDePrestamosChange extends EventChange {
 
         apply((PrestamoCreado event) -> {
             var id = event.getPrestamoId();
-            centroDePrestamos.prestamos.put(id, new Prestamo(id, event.getTipoDeRecurso(), event.getTipoDeSolicitud()));
+            centroDePrestamos.prestamos.put(id, new Prestamo(id, event.getEstadoDelRecurso(), event.getTipoDeRecurso(), event.getFecha(), event.getTiempoDePrestamo(), event.getSalirDeLaInstitucion()));
         });
     }
 }

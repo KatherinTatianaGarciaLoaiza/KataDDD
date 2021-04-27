@@ -13,8 +13,7 @@ public class RecursoChange extends EventChange {
 
         apply((CategoriaCreada event) -> {
             var id = event.getCategoriaId();
-            recursos.categorias.put(id,  new Categoria(id, event.getCodigoDeBarras(), event.getTipoDeRecurso(),
-                    event.getTiempoDePrestamo(), event.getSalirDeLaInstitucion()));
+            recursos.categorias.put(id,  new Categoria(id, event.getCodigoDeBarras(), event.getTipoDeRecurso()));
         });
     }
 }

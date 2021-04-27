@@ -1,4 +1,4 @@
-package example.DDD.dominio.centrodeprestamos.valuesObject;
+package example.DDD.dominio.VOgeneralesYComprobaciones;
 
 public enum TipoDeSolicitud {
     CANCELACION,

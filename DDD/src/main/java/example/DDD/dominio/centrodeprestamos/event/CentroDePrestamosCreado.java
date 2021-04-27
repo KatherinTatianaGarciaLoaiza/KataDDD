@@ -1,7 +1,8 @@
 package example.DDD.dominio.centrodeprestamos.event;
 
 import co.com.sofka.domain.generic.DomainEvent;
-import example.DDD.dominio.centrodeprestamos.valuesObject.TipoDeSolicitud;
+import example.DDD.dominio.VOgeneralesYComprobaciones.Comprobaciones;
+import example.DDD.dominio.VOgeneralesYComprobaciones.TipoDeSolicitud;
 import example.DDD.dominio.centrodeprestamos.valuesObject.CaracteristicasDelPrestamo;
 
 public class CentroDePrestamosCreado extends DomainEvent {

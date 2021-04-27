@@ -13,16 +13,12 @@ public class Categoria extends Entity<CategoriaId> {
     protected CodigoDeBarras codigoDeBarras;
     protected Disponibilidad disponibilidad;
     protected TipoDeRecurso tipoDeRecurso;
-    protected TiempoDePrestamo tiempoDePrestamo;
-    protected SalirDeLaInstitucion salirDeLaInstitucion;
 
-    public Categoria(CategoriaId entityId, CodigoDeBarras codigoDeBarras, TipoDeRecurso tipoDeRecurso,
-                     TiempoDePrestamo tiempoDePrestamo, SalirDeLaInstitucion salirDeLaInstitucion) {
+
+    public Categoria(CategoriaId entityId, CodigoDeBarras codigoDeBarras, TipoDeRecurso tipoDeRecurso) {
         super(entityId);
         this.codigoDeBarras = codigoDeBarras;
         this.tipoDeRecurso = tipoDeRecurso;
-        this.tiempoDePrestamo = tiempoDePrestamo;
-        this.salirDeLaInstitucion = salirDeLaInstitucion;
         this.disponibilidad = Disponibilidad.DISPONIBLE;
     }
 

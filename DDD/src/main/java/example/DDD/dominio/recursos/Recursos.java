@@ -18,7 +18,6 @@ import java.util.Map;
 public class Recursos extends AggregateEvent<RecursosId> {
 
     protected Map<CategoriaId, Categoria> categorias;
-    //protected Categoria categoria;
     protected List<String> recursosDisponibles;
     protected String idCentroDePrestamos;
 
