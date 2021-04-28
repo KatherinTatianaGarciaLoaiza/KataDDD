@@ -17,9 +17,6 @@ public class SolicitanteChange extends EventChange {
         });
 
         apply((DatosPersonalesModificados event) -> {
-            if (solicitante.datosPersonales.equals(event.getDatospersonales())){
-                throw new IllegalArgumentException("Los datos personales no fueron modificados");
-            }
             solicitante.datosPersonales = event.getDatospersonales();/*new DatosPersonales(event.getDatospersonales().value().Documento(), event.getDatospersonales().value().Nombre(),
                     event.getDatospersonales().value().Correo(), event.getDatospersonales().value().Telefono());*/
         });

@@ -36,14 +36,13 @@ public class Solicitante extends AggregateEvent<SolicitanteId> {
         return solicitante;
     }
 
-    public void modificarDatosPersonales(Long documento, String nombre, String correo, Long telefono){
-        DatosPersonales datospersonales = new DatosPersonales(documento, nombre, correo, telefono);
-        appendChange(new DatosPersonalesModificados(this.entityId, datospersonales)).apply();
+    public void modificarDatosPersonales(DatosPersonales datosPersonales){
+        appendChange(new DatosPersonalesModificados(datosPersonales)).apply();
     }
 
     public void asignarSancion(String motivo, String tiempoPenalizacion, EstadoSancion estadoSancion){
         Sancion sancion = new Sancion(motivo, tiempoPenalizacion, estadoSancion);
-        appendChange(new SancionAsignada(this.entityId, sancion)).apply();
+        appendChange(new SancionAsignada(sancion)).apply();
     }
 
     public DatosPersonales getDatosPersonales() {
